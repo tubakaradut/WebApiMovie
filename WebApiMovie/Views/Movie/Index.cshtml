@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<section class="container">
+    <div class="card">
+        <div class="card-header d-flex justify-content-between">
+            <div>
+                <h2>Movies</h2>
+            </div>
+            <div>
+                <button class="btn btn-primary" id="btnRandom">Random Movie</button>
+                <button class="btn btn-dark" id="btnRandomHighRatingMovie">Random High Rating Movie</button>
+                <button class="btn btn-success" id="btnCreate">Create Movie</button>
+                <input type="text" id="txtAra" style=" margin-left:auto; margin-top:30px"  placeholder="Search" class="form-control" />
+            </div>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+
+                        <th>#</th>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Rating</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody id="movieTable">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+@section scripts{
+    <script src="~/movie.js"></script>
+}
